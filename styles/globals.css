@@ -1,0 +1,45 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+body,html {
+    @apply h-full;
+  }
+  @layer base{
+    body{
+      @apply bg-[#08090a] tracking-wide;
+    }
+    
+    .accent{
+      color: #BA203C;
+    }
+    
+    li {
+      @apply cursor-pointer
+    }
+  
+  
+    #logo{
+      @apply cursor-pointer
+    }
+  
+    #display-none{
+      @apply hidden;
+    }
+  
+  }
+  .hidenav{
+    opacity: 0;
+    transition: 0.25s;
+    transition-timing-function: ease-out;
+    
+  }
+  .shownav{
+    opacity: 1;
+    transition: 0.25s;
+    transition-timing-function: ease-in;
+  }
+  
+  .navbg{
+    background: rgb(0,92,153);
+  }
